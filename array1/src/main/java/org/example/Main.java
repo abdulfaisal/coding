@@ -1,8 +1,13 @@
 package org.example;
 
+import java.util.List;
+import java.util.logging.Logger;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+
+    private static final Logger logger = Logger.getLogger(Main.class.getName());
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
@@ -34,6 +39,14 @@ public class Main {
         result = numSum.twoSum(new int[]{5,5}, 10);
         System.out.printf("\n%d %d\n", result[0] , result[1]);
 
+
+        /**
+         * Angram subList
+         */
+
+        GroupAnagram groupAnagramObj = new GroupAnagram();
+        List<List<String>> resulGroupAnagram =  groupAnagramObj.groupAnagrams(new String[]{"act","pots","tops","cat","stop","hat"});
+        logger.info(resulGroupAnagram.toString());
 
 
 
