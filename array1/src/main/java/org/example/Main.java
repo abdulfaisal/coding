@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.Arrays;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -21,5 +19,23 @@ public class Main {
         System.out.println(res);
         res = anagram.isAnagram("jar",  "jam");
         System.out.println(res);
+
+
+        /**
+         * TwoSum
+         */
+        TwoSum numSum = new TwoSum();
+        int[] result = new int[2];
+        result = numSum.twoSum(new int[]{3,4,5,6}, 7);
+        System.out.printf("\n%d %d\n", result[0] , result[1]);
+        result = numSum.twoSum(new int[]{4,5,6}, 10);
+        System.out.printf("\n%d %d", result[0] , result[1]);
+
+        result = numSum.twoSum(new int[]{5,5}, 10);
+        System.out.printf("\n%d %d\n", result[0] , result[1]);
+
+
+
+
     }
 }
