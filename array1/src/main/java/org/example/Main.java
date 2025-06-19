@@ -49,6 +49,10 @@ public class Main {
         logger.info(resulGroupAnagram.toString());
 
 
+        List<List<String>> resulGroupAnagramHashTable =  groupAnagramObj.groupAnagramsHashTable(new String[]{"act","pots","tops","cat","stop","hat"});
+        logger.info(resulGroupAnagram.toString());
+
+
 
     }
 }
