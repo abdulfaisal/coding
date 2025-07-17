@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Arrays;
 
 import java.util.List;
 import java.util.logging.Logger;
