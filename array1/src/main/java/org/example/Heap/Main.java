@@ -6,6 +6,14 @@ import java.util.Collections;
 public class Main {
 
     public static void main(String[] args) {
+       MeadianStrem meadianStrem = new MeadianStrem();
+        System.out.println("--");
+       meadianStrem.forInsert(new int[]{5, 15, 1, 3, 2, 8});
+        System.out.println("--");
+       meadianStrem.forInsert(new int[]{2, 2, 2, 2});
+    }
+
+    void kLargest() {
         Heap heapObj = new Heap();
         heapObj.insertFor(new int[]{1,4,5,10,2,8});
 
