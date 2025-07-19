@@ -31,6 +31,24 @@ public class ContiguousSubArray {
 
     }
 
+
+    int countDecreasingSubarrays(int[] arr) {
+        int count = 0;
+        int streak = 1;
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < arr[i - 1]) {
+                streak++;
+            } else {
+                count += (streak * (streak + 1)) / 2;
+                streak = 1;
+            }
+        }
+
+        count += (streak * (streak + 1)) / 2; // Add last streak
+        return count;
+    }
+
 /*
 9,8,4,9,3
 
@@ -39,7 +57,7 @@ public class ContiguousSubArray {
 4
 9
 8
-9
+9,8
 
  */
 }

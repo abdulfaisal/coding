@@ -18,9 +18,11 @@ public class Main {
 
     static void printContiguous() {
         ContiguousSubArray contiguousSubArray = new ContiguousSubArray();
-        System.out.println(contiguousSubArray.getNumOfContiguousSubArray(new int[]{9,8,4,9,3}));
+//        System.out.println(contiguousSubArray.getNumOfContiguousSubArray(new int[]{9,8,4,9,3}));
+//
+//        System.out.println(contiguousSubArray.getNumOfContiguousSubArray(new int[]{9,8,7,6,5}));
 
-        System.out.println(contiguousSubArray.getNumOfContiguousSubArray(new int[]{9,8,7,6,5}));
+        System.out.println(contiguousSubArray.countDecreasingSubarrays(new int[]{9,8,4,9,3}));
     }
 
 
