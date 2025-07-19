@@ -12,6 +12,19 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
 
+//        anagramArr();
+        printContiguous();
+    }
+
+    static void printContiguous() {
+        ContiguousSubArray contiguousSubArray = new ContiguousSubArray();
+        System.out.println(contiguousSubArray.getNumOfContiguousSubArray(new int[]{9,8,4,9,3}));
+
+        System.out.println(contiguousSubArray.getNumOfContiguousSubArray(new int[]{9,8,7,6,5}));
+    }
+
+
+    static void anagramArr() {
         DuplicateNum s = new DuplicateNum();
         boolean res = s.hasDuplicate(new int[]{1,2,3,4});
         System.out.println(res);
@@ -51,7 +64,6 @@ public class Main {
 
         List<List<String>> resulGroupAnagramHashTable =  groupAnagramObj.groupAnagramsHashTable(new String[]{"act","pots","tops","cat","stop","hat"});
         logger.info(resulGroupAnagram.toString());
-
 
 
     }
