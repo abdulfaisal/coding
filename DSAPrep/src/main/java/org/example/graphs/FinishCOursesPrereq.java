@@ -15,8 +15,8 @@ public class FinishCOursesPrereq {
 
             // Build adjacency matrix
             for (int[] pre : prerequisites) {
-                int to = pre[0];
-                int from = pre[1];
+                int from = pre[0];
+                int  to = pre[1];
                 graph[from][to] = 1;
             }
 
